@@ -634,6 +634,7 @@ GameObject:
   - component: {fileID: 4164886351987798827}
   - component: {fileID: 4164886351995215101}
   - component: {fileID: 4055610612979836050}
+  - component: {fileID: 2256070207920041836}
   m_Layer: 0
   m_Name: Left Hand Wth Watch
   m_TagString: Untagged
@@ -719,6 +720,50 @@ MonoBehaviour:
     m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   handAnimator: {fileID: 4164886351995215101}
+--- !u!114 &2256070207920041836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4164886351987961675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boneShape: 1
+  drawBones: 1
+  drawTripods: 0
+  boneSize: 1
+  tripodSize: 1
+  boneColor: {r: 0, g: 0, b: 1, a: 0.5}
+  m_Transforms:
+  - {fileID: 4164886351987798831}
+  - {fileID: 4164886351987798815}
+  - {fileID: 4164886351987798809}
+  - {fileID: 4164886351987798837}
+  - {fileID: 4164886351987798839}
+  - {fileID: 4164886351987798833}
+  - {fileID: 4164886351987798835}
+  - {fileID: 4164886351987798811}
+  - {fileID: 4164886351987798805}
+  - {fileID: 4164886351987798807}
+  - {fileID: 4164886351987798801}
+  - {fileID: 4164886351987798803}
+  - {fileID: 4164886351987798797}
+  - {fileID: 4164886351987798799}
+  - {fileID: 4164886351987798793}
+  - {fileID: 4164886351987798845}
+  - {fileID: 4164886351987798847}
+  - {fileID: 4164886351987798841}
+  - {fileID: 4164886351987798843}
+  - {fileID: 4164886351987798795}
+  - {fileID: 4164886351987798789}
+  - {fileID: 4164886351987798791}
+  - {fileID: 4164886351987798785}
+  - {fileID: 4164886351987798787}
+  - {fileID: 4164886351987798813}
 --- !u!1 &4164886351987961677
 GameObject:
   m_ObjectHideFlags: 0
