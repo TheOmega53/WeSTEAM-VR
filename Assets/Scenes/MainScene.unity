@@ -241,6 +241,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4135324017402586354}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &514230556 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5425135519617295877, guid: 683c4a23af981de4dab53bbce3878949,
+    type: 3}
+  m_PrefabInstance: {fileID: 4135324017402586354}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &534927956 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4135324017388060326, guid: 683c4a23af981de4dab53bbce3878949,
@@ -826,6 +832,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1155824980010573833, guid: 683c4a23af981de4dab53bbce3878949,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155824980010573833, guid: 683c4a23af981de4dab53bbce3878949,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155824980010573833, guid: 683c4a23af981de4dab53bbce3878949,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 514230556}
+    - target: {fileID: 1155824980010573833, guid: 683c4a23af981de4dab53bbce3878949,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155824980010573833, guid: 683c4a23af981de4dab53bbce3878949,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_material
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155824980010573833, guid: 683c4a23af981de4dab53bbce3878949,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Renderer, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155824980010573833, guid: 683c4a23af981de4dab53bbce3878949,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: be98a7556ecbfd246adb4fa521d89929, type: 2}
+    - target: {fileID: 1155824980010573833, guid: 683c4a23af981de4dab53bbce3878949,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3689109063832109010, guid: 683c4a23af981de4dab53bbce3878949,
+        type: 3}
+      propertyPath: m_PokeConfiguration.m_ConstantValue.m_PokeDirection
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4135324016669332132, guid: 683c4a23af981de4dab53bbce3878949,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1135,6 +1186,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 21.164454
+      objectReference: {fileID: 0}
+    - target: {fileID: 5353330775614778827, guid: 683c4a23af981de4dab53bbce3878949,
+        type: 3}
+      propertyPath: m_RequirePokeFilter
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5775174927830313985, guid: 683c4a23af981de4dab53bbce3878949,
         type: 3}

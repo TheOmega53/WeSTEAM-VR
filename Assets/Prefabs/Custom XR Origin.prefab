@@ -1499,7 +1499,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4135324017828755857
 Transform:
   m_ObjectHideFlags: 0
@@ -2888,6 +2888,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4135324017828755857}
     m_Modifications:
+    - target: {fileID: 2568165694091096823, guid: baba4d4e59ad7714e9ae84d1f1bd9a09,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 5389901471836620392}
+    - target: {fileID: 2568165694091096823, guid: baba4d4e59ad7714e9ae84d1f1bd9a09,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2568165694091096823, guid: baba4d4e59ad7714e9ae84d1f1bd9a09,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2568165694091096823, guid: baba4d4e59ad7714e9ae84d1f1bd9a09,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5425135519617295877}
+    - target: {fileID: 2568165694091096823, guid: baba4d4e59ad7714e9ae84d1f1bd9a09,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2568165694091096823, guid: baba4d4e59ad7714e9ae84d1f1bd9a09,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_material
+      objectReference: {fileID: 0}
+    - target: {fileID: 2568165694091096823, guid: baba4d4e59ad7714e9ae84d1f1bd9a09,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Renderer, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2568165694091096823, guid: baba4d4e59ad7714e9ae84d1f1bd9a09,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: be98a7556ecbfd246adb4fa521d89929, type: 2}
+    - target: {fileID: 2568165694091096823, guid: baba4d4e59ad7714e9ae84d1f1bd9a09,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4164886351987798827, guid: baba4d4e59ad7714e9ae84d1f1bd9a09,
         type: 3}
       propertyPath: m_RootOrder
@@ -2948,8 +2993,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: Left Hand Wth Watch
       objectReference: {fileID: 0}
+    - target: {fileID: 8783000448736313141, guid: baba4d4e59ad7714e9ae84d1f1bd9a09,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 5389901471836620392}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baba4d4e59ad7714e9ae84d1f1bd9a09, type: 3}
+--- !u!23 &5425135519617295877 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2495232715850201401, guid: baba4d4e59ad7714e9ae84d1f1bd9a09,
+    type: 3}
+  m_PrefabInstance: {fileID: 7631680443146542908}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5775174927830314007 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4164886351987798827, guid: baba4d4e59ad7714e9ae84d1f1bd9a09,
