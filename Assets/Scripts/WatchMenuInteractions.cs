@@ -16,11 +16,13 @@ public class WatchMenuInteractions : MonoBehaviour
     {
         dialogueManager = DialogueManager.GetInstance();
         ContinueDialogueButton.onClick.AddListener (() => dialogueManager.ContinueStory());
+        MenuCanvas.gameObject.SetActive(false);
     }
 
     private void OnEnable()
     {
         transform.parent.LookAt(PlayerCamera);
+        Debug.Log("On Enable was called");
     }
     public void ToggleMenu()
     {
