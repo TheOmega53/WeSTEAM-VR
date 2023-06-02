@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpaceOutpost.unity
     guid: b0bd22a124e9eb54ca1cd4c9d4fcc360
+  - enabled: 1
+    path: Assets/Scenes/Labratory.unity
+    guid: 238b63afa310e428a87aea30ed9fead8
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
