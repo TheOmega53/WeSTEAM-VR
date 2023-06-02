@@ -2,15 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class MainMenu : MonoBehaviour
+public class SceneLoader : MonoBehaviour
 {
-    [SerializeField] private Transform PlayerCamera;
-
-    
-    private void OnEnable()
-    {
-        transform.parent.LookAt(PlayerCamera);
-    }
 
     public void LoadScene(string levelName)
     {

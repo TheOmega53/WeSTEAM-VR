@@ -2953,6 +2953,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7396520030760373917}
+  - component: {fileID: 1863425895}
   m_Layer: 0
   m_Name: Canvas Offset
   m_TagString: Untagged
@@ -2976,6 +2977,20 @@ Transform:
   m_Father: {fileID: 3927206187911136149}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 12.185, y: 111.62, z: 13.417}
+--- !u!114 &1863425895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7396520030760373918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 553399bd136caa64ba6a44285760172e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 8062650724689331300}
+  dialogueText: {fileID: 5225544794038125970}
 --- !u!1001 &1102426615271534782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3347,7 +3362,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7396520031963164588}
+      objectReference: {fileID: 7396520031033141533}
     - target: {fileID: 8783000448736313141, guid: baba4d4e59ad7714e9ae84d1f1bd9a09,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -3392,25 +3407,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1102426615271534782}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7023855064119971589 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7941295152956522427, guid: baba4d4e59ad7714e9ae84d1f1bd9a09,
-    type: 3}
-  m_PrefabInstance: {fileID: 1102426615271534782}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7396520031963164588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7023855064119971589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bfb72bb48293ee488e198e124284898, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MenuCanvas: {fileID: 8062650724689331296}
 --- !u!1001 &7396520030837072044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3565,6 +3561,30 @@ PrefabInstance:
       objectReference: {fileID: 6901248074567331798}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a02f8605d81990c44a5fd3d545e3f8f6, type: 3}
+--- !u!114 &5225544794038125970 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3324055142031041854, guid: a02f8605d81990c44a5fd3d545e3f8f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7396520030837072044}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6952545807062365604 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 493654697103561992, guid: a02f8605d81990c44a5fd3d545e3f8f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7396520030837072044}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!223 &8062650724689331296 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 667093334136562892, guid: a02f8605d81990c44a5fd3d545e3f8f6,
@@ -3577,3 +3597,24 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 7396520030837072044}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8062650724689331300 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 667093334136562888, guid: a02f8605d81990c44a5fd3d545e3f8f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7396520030837072044}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7396520031033141533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8062650724689331300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bfb72bb48293ee488e198e124284898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MenuCanvas: {fileID: 8062650724689331296}
+  PlayerCamera: {fileID: 6901248074567331798}
+  ContinueDialogueButton: {fileID: 6952545807062365604}
