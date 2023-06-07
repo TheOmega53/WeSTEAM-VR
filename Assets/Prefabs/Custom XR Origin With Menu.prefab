@@ -2991,6 +2991,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 8062650724689331300}
   dialogueText: {fileID: 5225544794038125970}
+  TalkerImage: {fileID: 1047250810794007790}
 --- !u!1001 &1102426615271534782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3561,6 +3562,18 @@ PrefabInstance:
       objectReference: {fileID: 6901248074567331798}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a02f8605d81990c44a5fd3d545e3f8f6, type: 3}
+--- !u!114 &1047250810794007790 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7506694464132824130, guid: a02f8605d81990c44a5fd3d545e3f8f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7396520030837072044}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5225544794038125970 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3324055142031041854, guid: a02f8605d81990c44a5fd3d545e3f8f6,

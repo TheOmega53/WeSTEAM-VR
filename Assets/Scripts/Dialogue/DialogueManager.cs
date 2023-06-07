@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using Ink.Runtime;
 using UnityEngine.Events;
-using System;
+using UnityEngine.UI;
 
 
 public class DialogueManager : MonoBehaviour
@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI dialogueText;
+    [SerializeField] private Image TalkerImage;
 
     private Story currentStory;
     private UnityEvent endOfStoryEvent;
@@ -40,10 +41,11 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(false);
     }
 
-    public void EnterDialogueMode(TextAsset inkJSON, UnityEvent EndOfStoryEvent)
+    public void EnterDialogueMode(TextAsset inkJSON, UnityEvent EndOfStoryEvent, Sprite TalkerSprite)
     {
         currentStory = new Story(inkJSON.text);
         endOfStoryEvent = EndOfStoryEvent;
+        TalkerImage.sprite = TalkerSprite;
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
 
