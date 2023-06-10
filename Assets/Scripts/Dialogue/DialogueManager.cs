@@ -75,7 +75,7 @@ public class DialogueManager : MonoBehaviour
 
     public void ContinueStory()
     {
-        if (currentStory.canContinue)
+        if (currentStory.canContinue && currentStory.currentChoices.Count == 0)
         {
             dialogueText.text = currentStory.Continue();
             DisplayChoices();
@@ -98,7 +98,14 @@ public class DialogueManager : MonoBehaviour
     {
         List<Choice> currentChoices = currentStory.currentChoices;
 
-        if(currentStory.currentChoices.Count > 0) { continueButton.gameObject.SetActive(false); }
+        if (currentStory.currentChoices.Count > 0)
+        {
+            continueButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            continueButton.gameObject.SetActive(true);
+        }
 
         if(currentChoices.Count > choices.Length)
         {
@@ -118,5 +125,12 @@ public class DialogueManager : MonoBehaviour
         {
             choices[i].gameObject.SetActive(false);
         }
+    }
+
+    public void MakeChoice(int choiceIndex)
+    {
+        currentStory.ChooseChoiceIndex(choiceIndex);
+        ContinueStory();
+
     }
 }
