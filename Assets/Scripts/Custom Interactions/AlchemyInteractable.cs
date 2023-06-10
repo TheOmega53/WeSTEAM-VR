@@ -34,7 +34,7 @@ public class AlchemyInteractable : MonoBehaviour
 
     public void OnItemGrabbed()
     {
-        Debug.Log("Item Grabbed");
+        Debug.Log(this.name + " Grabbed");
         if(held != true)
         {
             held = true;
@@ -50,13 +50,13 @@ public class AlchemyInteractable : MonoBehaviour
 
     internal void Receive()
     {
-        Debug.Log("Pour Received");
+        Debug.Log("Pour Received inside: " + this.name);
         pouredInEvent.Invoke();
     }
 
     internal void Heat()
     {
-        Debug.Log("Being Heated");
+        Debug.Log(this.name + "is being Heated");
         heatedEvent.Invoke();
     }
 }
