@@ -7,14 +7,26 @@ public class WatchMenuInteractions : MonoBehaviour
 {
 
     private bool isMenuActive;
-    public Canvas MenuCanvas;
+    [SerializeField] private Canvas MenuCanvas;
+    [SerializeField] private Transform PlayerCamera;
 
+    [SerializeField] private Button ContinueDialogueButton;
+    private DialogueManager dialogueManager;
     private void Start()
     {
-        isMenuActive = MenuCanvas.isActiveAndEnabled;
+        dialogueManager = DialogueManager.GetInstance();
+        ContinueDialogueButton.onClick.AddListener (() => dialogueManager.ContinueStory());
+        MenuCanvas.gameObject.SetActive(false);
+    }
+
+    private void OnEnable()
+    {
+        transform.parent.LookAt(PlayerCamera);
+        Debug.Log("On Enable was called");
     }
     public void ToggleMenu()
     {
+        isMenuActive = MenuCanvas.isActiveAndEnabled;
         if (isMenuActive)
         {
             MenuCanvas.gameObject.SetActive(false);
