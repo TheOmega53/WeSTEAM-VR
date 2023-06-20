@@ -58,8 +58,11 @@ public class DialogueManager : MonoBehaviour
     {
         currentStory = new Story(inkJSON.text);
         endOfStoryEvent = EndOfStoryEvent;
-        TalkerImage.sprite = TalkerSprite;
-        dialogueIsPlaying = true;
+        if (TalkerSprite != null)
+        {
+            TalkerImage.sprite = TalkerSprite;
+        }
+            dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
 
         ContinueStory();
