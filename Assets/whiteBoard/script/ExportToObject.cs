@@ -10,6 +10,9 @@ public class ExportToObject : MonoBehaviour
     public GameObject sourceObject;
     public GameObject cubeObject;
     public GameObject cylinderObject;
+    public GameObject sphereObject;
+    public GameObject capsuleObject;
+
 
     void Start()
     {
@@ -18,6 +21,12 @@ public class ExportToObject : MonoBehaviour
         
         Renderer cylinderRenderer = cylinderObject.GetComponent<Renderer>();
         cylinderRenderer.enabled = false;
+        
+        Renderer sphereRenderer = sphereObject.GetComponent<Renderer>();
+        sphereRenderer.enabled = false;
+        
+        Renderer capsuleRenderer = capsuleObject.GetComponent<Renderer>();
+        capsuleRenderer.enabled = false;
     }
 
     // Update is called once per frame
@@ -46,4 +55,25 @@ public class ExportToObject : MonoBehaviour
         Material cylinderMaterial = cylinderRenderer.material;
         cylinderMaterial.mainTexture = sourceTexture;
     }
+    public void ExportAndAssignTextureSphere()
+    { 
+        Renderer sourceRenderer = sourceObject.GetComponent<Renderer>();
+        Material sourceMaterial = sourceRenderer.material;
+        Texture sourceTexture = sourceMaterial.mainTexture;
+        Renderer sphereRenderer = sphereObject.GetComponent<Renderer>();
+        sphereRenderer.enabled = true;
+        Material sphereMaterial = sphereRenderer.material;
+        sphereMaterial.mainTexture = sourceTexture;
+    }
+    public void ExportAndAssignTextureCapsule()
+    { 
+        Renderer sourceRenderer = sourceObject.GetComponent<Renderer>();
+        Material sourceMaterial = sourceRenderer.material;
+        Texture sourceTexture = sourceMaterial.mainTexture;
+        Renderer capsuleRenderer = capsuleObject.GetComponent<Renderer>();
+        capsuleRenderer.enabled = true;
+        Material capsuleMaterial = capsuleRenderer.material;
+        capsuleMaterial.mainTexture = sourceTexture;
+    }
+    
 }
