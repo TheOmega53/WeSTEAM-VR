@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4896756185155494272}
   - component: {fileID: 7634854851517197216}
   - component: {fileID: 7870209617968661829}
+  - component: {fileID: 8921187123201520548}
+  - component: {fileID: 5418675236957368376}
   m_Layer: 0
   m_Name: BookOpen4
   m_TagString: Untagged
@@ -98,3 +100,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.74631083, y: 0.09960358, z: 0.5370873}
   m_Center: {x: -0.000059574842, y: 0.041025855, z: 0.000042185187}
+--- !u!95 &8921187123201520548
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7793159955786078249}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5418675236957368376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7793159955786078249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff0960ef4ea6e04eac66b4a7fd2189d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RigLayers: []
+  m_Effectors: []
