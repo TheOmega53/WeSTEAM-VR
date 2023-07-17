@@ -43,7 +43,8 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {        
         dialogueIsPlaying = false;
-        dialoguePanel.SetActive(false);
+        //if (sequencemanager.startedrepairs == true){ }
+        //dialoguePanel.SetActive(false);
 
         choicesText = new TextMeshProUGUI[choices.Length];
         int index = 0;
@@ -103,11 +104,17 @@ public class DialogueManager : MonoBehaviour
 
         if (currentStory.currentChoices.Count > 0)
         {
-            continueButton.gameObject.SetActive(false);
+            if (continueButton)
+            {
+                continueButton.gameObject.SetActive(false);
+            }            
         }
         else
         {
-            continueButton.gameObject.SetActive(true);
+            if (continueButton)
+            {
+                continueButton.gameObject.SetActive(true);
+            }            
         }
 
         if(currentChoices.Count > choices.Length)
