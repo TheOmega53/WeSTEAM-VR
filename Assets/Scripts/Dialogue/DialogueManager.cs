@@ -43,8 +43,11 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {        
         dialogueIsPlaying = false;
-        //if (sequencemanager.startedrepairs == true){ }
-        //dialoguePanel.SetActive(false);
+        SequenceManager sequenceManager = SequenceManager.GetInstance();
+        if (sequenceManager.SequenceFlags["startAct1"] == true)
+        {
+
+        }
 
         choicesText = new TextMeshProUGUI[choices.Length];
         int index = 0;

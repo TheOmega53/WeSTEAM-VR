@@ -1,7 +1,9 @@
-Hello!
+There is a time anomaly affecting the warp core.
 
-You're going to have to take a journey through time to gather information on some of the most important humans in history!
+The way the warp core is as a result of some important historical discoveries
 
-Are you ready?
+If we want to fix this anomaly, we have to travel back in time to the time these discoveries were made, and fix the problem!
 
-Whenever you're ready, press on the button again and you'll be sent to your first destination.
+It's a challenge, but I will be guiding you using your watch!
+
+Whenever you're ready, press on the button again and you'll be sent to your first destination!

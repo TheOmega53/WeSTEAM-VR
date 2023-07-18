@@ -8870,6 +8870,18 @@ MonoBehaviour:
   endOfStoryEvent:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1534185173}
+        m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
+        m_MethodName: ActivateSequenceTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: startAct1
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 165701510}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: LoadScene
@@ -12891,6 +12903,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b64460e5775b6440a56360514869797, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startedRepairs: 0
+  startedAct1: 0
 --- !u!4 &1534185174
 Transform:
   m_ObjectHideFlags: 0
@@ -18694,6 +18708,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1863425895, guid: 0affc0b69cb2aa346abca6563f984b57, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978819294129170064, guid: 0affc0b69cb2aa346abca6563f984b57,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559581517432342321, guid: 0affc0b69cb2aa346abca6563f984b57,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3927206187911136129, guid: 0affc0b69cb2aa346abca6563f984b57,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -18863,6 +18891,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.046993986
+      objectReference: {fileID: 0}
+    - target: {fileID: 3948438891393192209, guid: 0affc0b69cb2aa346abca6563f984b57,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5225544794038125970, guid: 0affc0b69cb2aa346abca6563f984b57,
+        type: 3}
+      propertyPath: m_text
+      value: This menu could provide useful information later on! keep an eye on
+        your watch!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5225544794038125970, guid: 0affc0b69cb2aa346abca6563f984b57,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5926722948813814978, guid: 0affc0b69cb2aa346abca6563f984b57,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828625057296982694, guid: 0affc0b69cb2aa346abca6563f984b57,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6901248073666649948, guid: 0affc0b69cb2aa346abca6563f984b57,
         type: 3}
@@ -19134,6 +19188,16 @@ PrefabInstance:
       propertyPath: ContinueDialogueButton
       value: 
       objectReference: {fileID: 1732096851}
+    - target: {fileID: 7746610616823295290, guid: 0affc0b69cb2aa346abca6563f984b57,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062650724746720118, guid: 0affc0b69cb2aa346abca6563f984b57,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8062650725561263810, guid: 0affc0b69cb2aa346abca6563f984b57,
         type: 3}
       propertyPath: m_Type
