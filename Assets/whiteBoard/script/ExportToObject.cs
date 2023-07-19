@@ -36,14 +36,17 @@ public class ExportToObject : MonoBehaviour
     }
     
     public void ExportAndAssignTextureCube()
-    { 
+    {
         Renderer sourceRenderer = sourceObject.GetComponent<Renderer>();
-        Material sourceMaterial = sourceRenderer.material;
-        Texture sourceTexture = sourceMaterial.mainTexture;
         Renderer cubeRenderer = cubeObject.GetComponent<Renderer>();
-        cubeRenderer.enabled = true;
-        Material cubeMaterial = cubeRenderer.material;
-        cubeMaterial.mainTexture = sourceTexture;
+        if (sourceRenderer != null && cubeRenderer != null)
+        {
+            Material sourceMaterial = sourceRenderer.sharedMaterial;
+            Material copiedMaterial =new Material(sourceMaterial);
+            cubeRenderer.enabled = true;
+            cubeRenderer.sharedMaterial = copiedMaterial;
+        }
+
     }
     public void ExportAndAssignTextureCylinder()
     { 
