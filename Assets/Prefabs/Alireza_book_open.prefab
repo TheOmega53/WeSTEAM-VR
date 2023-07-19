@@ -436,7 +436,7 @@ GameObject:
   - component: {fileID: 5055686232994395245}
   - component: {fileID: 5055686232994395153}
   m_Layer: 0
-  m_Name: Alireza_book
+  m_Name: Alireza_book_open
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

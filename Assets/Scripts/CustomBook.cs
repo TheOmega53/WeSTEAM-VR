@@ -6,7 +6,7 @@ using UnityEngine;
 public class CustomBook : MonoBehaviour
 {
     [SerializeField]
-    private bool opened;
+    private bool isOpen;
     private BoxCollider collider;
     private Animator animator;
     private Canvas content;
@@ -16,20 +16,35 @@ public class CustomBook : MonoBehaviour
         collider = this.transform.GetComponent<BoxCollider>();
         animator = this.transform.GetComponent<Animator>();
         content = this.transform.GetComponentInChildren<Canvas>();
+        UpdateCollider();
+        ToggleContent();
     }
     public void OpenClose()
     {
-        if (!opened)
+        if (!isOpen)
         {
-            opened = true;
+            UpdateCollider();
+            isOpen = true;
             animator.SetTrigger("Trigger");
-            collider.center = new Vector3(0, 0.0125f, 0);
-            collider.size = new Vector3(0.3076485f, 0.02910475f, 0.2000001f);            
             
         } else
         {
-            opened = false;
+            UpdateCollider();
+            isOpen = false;
             animator.SetTrigger("Trigger");
+        }
+    }
+
+    private void UpdateCollider()
+    {
+        if (this.isOpen)
+        {
+            collider.center = new Vector3(0, 0.0125f, 0);
+            collider.size = new Vector3(0.3076485f, 0.02910475f, 0.2000001f);
+
+        }
+        else
+        {
             collider.center = new Vector3(0, 0.08f, 0);
             collider.size = new Vector3(0.04f, 0.16f, 0.2f);
         }
@@ -38,7 +53,7 @@ public class CustomBook : MonoBehaviour
     public void ToggleContent()
     {
         Debug.Log("Toggling Content");
-        if (opened)
+        if (isOpen)
         {
             content.gameObject.SetActive(true);
         } else
