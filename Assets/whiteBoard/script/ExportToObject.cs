@@ -43,10 +43,12 @@ public class ExportToObject : MonoBehaviour
         {
             Material sourceMaterial = sourceRenderer.sharedMaterial;
             Material copiedMaterial =new Material(sourceMaterial);
+            copiedMaterial.CopyPropertiesFromMaterial(sourceMaterial);
             cubeRenderer.enabled = true;
-            cubeRenderer.sharedMaterial = copiedMaterial;
+            cubeRenderer.material = copiedMaterial;
         }
 
+        sourceRenderer.enabled = false;
     }
     public void ExportAndAssignTextureCylinder()
     { 
@@ -57,6 +59,7 @@ public class ExportToObject : MonoBehaviour
         cylinderRenderer.enabled = true;
         Material cylinderMaterial = cylinderRenderer.material;
         cylinderMaterial.mainTexture = sourceTexture;
+        sourceRenderer.enabled = false;
     }
     public void ExportAndAssignTextureSphere()
     { 
@@ -67,6 +70,7 @@ public class ExportToObject : MonoBehaviour
         sphereRenderer.enabled = true;
         Material sphereMaterial = sphereRenderer.material;
         sphereMaterial.mainTexture = sourceTexture;
+        sourceRenderer.enabled = false;
     }
     public void ExportAndAssignTextureCapsule()
     { 
@@ -77,6 +81,7 @@ public class ExportToObject : MonoBehaviour
         capsuleRenderer.enabled = true;
         Material capsuleMaterial = capsuleRenderer.material;
         capsuleMaterial.mainTexture = sourceTexture;
+        sourceRenderer.enabled = false;
     }
     
 }
