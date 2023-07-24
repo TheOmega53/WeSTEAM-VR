@@ -36,44 +36,53 @@ public class ExportToObject : MonoBehaviour
     }
     
     public void ExportAndAssignTextureCube()
-    { 
-        Renderer sourceRenderer = sourceObject.GetComponent<Renderer>();
-        Material sourceMaterial = sourceRenderer.material;
-        Texture sourceTexture = sourceMaterial.mainTexture;
-        Renderer cubeRenderer = cubeObject.GetComponent<Renderer>();
-        cubeRenderer.enabled = true;
-        Material cubeMaterial = cubeRenderer.material;
-        cubeMaterial.mainTexture = sourceTexture;
+    {
+        //Renderer sourceRenderer = sourceObject.GetComponent<Renderer>();
+        //Material sourceMaterial = sourceRenderer.material;
+        //Texture sourceTexture = sourceMaterial.mainTexture;
+        //Renderer cubeRenderer = cubeObject.GetComponent<Renderer>();
+        cubeObject.GetComponent<Renderer>().enabled = true;
+        //Material cubeMaterial = cubeRenderer.material;
+        //cubeMaterial.mainTexture = sourceTexture;
+        
+        cubeObject.GetComponent<Renderer>().material.mainTexture = sourceObject.GetComponent<Renderer>().material.mainTexture;
     }
     public void ExportAndAssignTextureCylinder()
     { 
-        Renderer sourceRenderer = sourceObject.GetComponent<Renderer>();
-        Material sourceMaterial = sourceRenderer.material;
-        Texture sourceTexture = sourceMaterial.mainTexture;
-        Renderer cylinderRenderer = cylinderObject.GetComponent<Renderer>();
-        cylinderRenderer.enabled = true;
-        Material cylinderMaterial = cylinderRenderer.material;
-        cylinderMaterial.mainTexture = sourceTexture;
+        //Renderer sourceRenderer = sourceObject.GetComponent<Renderer>();
+        //Material sourceMaterial = sourceRenderer.material;
+        //Texture sourceTexture = sourceMaterial.mainTexture;
+        //Renderer cylinderRenderer = cylinderObject.GetComponent<Renderer>();
+        cylinderObject.GetComponent<Renderer>().enabled = true;
+        //Material cylinderMaterial = cylinderRenderer.material;
+        //cylinderMaterial.mainTexture = sourceTexture;
+
+        cylinderObject.GetComponent<Renderer>().material.mainTexture = sourceObject.GetComponent<Renderer>().material.mainTexture;
     }
     public void ExportAndAssignTextureSphere()
     { 
-        Renderer sourceRenderer = sourceObject.GetComponent<Renderer>();
-        Material sourceMaterial = sourceRenderer.material;
-        Texture sourceTexture = sourceMaterial.mainTexture;
-        Renderer sphereRenderer = sphereObject.GetComponent<Renderer>();
-        sphereRenderer.enabled = true;
-        Material sphereMaterial = sphereRenderer.material;
-        sphereMaterial.mainTexture = sourceTexture;
+        //Renderer sourceRenderer = sourceObject.GetComponent<Renderer>();
+        //Material sourceMaterial = sourceRenderer.material;
+        //Texture sourceTexture = sourceMaterial.mainTexture;
+        //Renderer sphereRenderer = sphereObject.GetComponent<Renderer>();
+        sphereObject.GetComponent<Renderer>().enabled = true;
+        //Material sphereMaterial = sphereRenderer.material;
+        //sphereMaterial.mainTexture = sourceTexture;
+
+        sphereObject.GetComponent<Renderer>().material.mainTexture = sourceObject.GetComponent<Renderer>().material.mainTexture;
+
     }
     public void ExportAndAssignTextureCapsule()
-    { 
-        Renderer sourceRenderer = sourceObject.GetComponent<Renderer>();
-        Material sourceMaterial = sourceRenderer.material;
-        Texture sourceTexture = sourceMaterial.mainTexture;
-        Renderer capsuleRenderer = capsuleObject.GetComponent<Renderer>();
-        capsuleRenderer.enabled = true;
-        Material capsuleMaterial = capsuleRenderer.material;
-        capsuleMaterial.mainTexture = sourceTexture;
+    {
+        //Renderer sourceRenderer = sourceObject.GetComponent<Renderer>();
+        //Material sourceMaterial = sourceRenderer.material;
+        //Texture sourceTexture = sourceMaterial.mainTexture;
+        //Renderer capsuleRenderer = capsuleObject.GetComponent<Renderer>();
+        //capsuleRenderer.enabled = true;
+        capsuleObject.GetComponent<Renderer>().enabled = true;
+        //Material capsuleMaterial = capsuleRenderer.material;
+        //capsuleMaterial.mainTexture = sourceTexture;
+        capsuleObject.GetComponent<Renderer>().material.mainTexture = sourceObject.GetComponent<Renderer>().material.mainTexture;
     }
-    
+
 }
