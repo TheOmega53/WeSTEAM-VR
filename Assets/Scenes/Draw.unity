@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 117908}
   - component: {fileID: 117907}
-  - component: {fileID: 117906}
+  - component: {fileID: 117909}
   m_Layer: 0
   m_Name: GenerateObject (3)
   m_TagString: Untagged
@@ -141,23 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &117906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 117905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 401b8914b8e804ed5931c7f947ab169f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sourceObject: {fileID: 291978349}
-  cubeObject: {fileID: 487756649}
-  cylinderObject: {fileID: 1605170315}
-  sphereObject: {fileID: 1532433747}
-  capsuleObject: {fileID: 942825698}
 --- !u!23 &117907
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -215,6 +198,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &117909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66a48702deb02407d975b0fb2f59ccb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourceObject3: {fileID: 291978349}
+  cubeObject3: {fileID: 487756649}
+  cylinderObject3: {fileID: 1605170315}
+  sphereObject3: {fileID: 1532433747}
+  capsuleObject3: {fileID: 942825698}
 --- !u!1 &22521757
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,9 +299,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 230025348}
-        m_TargetAssemblyTypeName: ExportToObject, Assembly-CSharp
-        m_MethodName: ExportAndAssignTextureCube
+      - m_Target: {fileID: 230025351}
+        m_TargetAssemblyTypeName: ExportToObject2, Assembly-CSharp
+        m_MethodName: ExportAndAssignTextureCube2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -433,9 +433,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1417463082}
-        m_TargetAssemblyTypeName: ExportToObject, Assembly-CSharp
-        m_MethodName: ExportAndAssignTextureCylinder
+      - m_Target: {fileID: 1483544252}
+        m_TargetAssemblyTypeName: ExportToObject1, Assembly-CSharp
+        m_MethodName: ExportAndAssignTextureCylinder1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -698,7 +698,7 @@ GameObject:
   - component: {fileID: 43938153}
   - component: {fileID: 43938152}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Cube(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1720,7 +1720,7 @@ GameObject:
   m_Component:
   - component: {fileID: 230025350}
   - component: {fileID: 230025349}
-  - component: {fileID: 230025348}
+  - component: {fileID: 230025351}
   m_Layer: 0
   m_Name: GenerateObject (2)
   m_TagString: Untagged
@@ -1728,23 +1728,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &230025348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 230025347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 401b8914b8e804ed5931c7f947ab169f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sourceObject: {fileID: 1511510678}
-  cubeObject: {fileID: 248610245}
-  cylinderObject: {fileID: 1725175999}
-  sphereObject: {fileID: 549782536}
-  capsuleObject: {fileID: 1088177877}
 --- !u!23 &230025349
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1802,6 +1785,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &230025351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230025347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c064aff61e864838b4c8de281eb65af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourceObject2: {fileID: 1511510678}
+  cubeObject2: {fileID: 248610245}
+  cylinderObject2: {fileID: 1725175999}
+  sphereObject2: {fileID: 549782536}
+  capsuleObject2: {fileID: 1088177877}
 --- !u!1 &248610245
 GameObject:
   m_ObjectHideFlags: 0
@@ -1815,7 +1815,7 @@ GameObject:
   - component: {fileID: 248610248}
   - component: {fileID: 248610247}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Cube(2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2493,9 +2493,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 117906}
-        m_TargetAssemblyTypeName: ExportToObject, Assembly-CSharp
-        m_MethodName: ExportAndAssignTextureCylinder
+      - m_Target: {fileID: 117909}
+        m_TargetAssemblyTypeName: ExportToObject3, Assembly-CSharp
+        m_MethodName: ExportAndAssignTextureCylinder3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2811,9 +2811,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 230025348}
-        m_TargetAssemblyTypeName: ExportToObject, Assembly-CSharp
-        m_MethodName: ExportAndAssignTextureCapsule
+      - m_Target: {fileID: 230025351}
+        m_TargetAssemblyTypeName: ExportToObject2, Assembly-CSharp
+        m_MethodName: ExportAndAssignTextureCapsule2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3075,7 +3075,7 @@ GameObject:
   - component: {fileID: 487756652}
   - component: {fileID: 487756651}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Cube(3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3308,7 +3308,7 @@ GameObject:
   - component: {fileID: 549782539}
   - component: {fileID: 549782538}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Sphere(2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4289,9 +4289,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 117906}
-        m_TargetAssemblyTypeName: ExportToObject, Assembly-CSharp
-        m_MethodName: ExportAndAssignTextureCube
+      - m_Target: {fileID: 117909}
+        m_TargetAssemblyTypeName: ExportToObject3, Assembly-CSharp
+        m_MethodName: ExportAndAssignTextureCube3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5382,7 +5382,7 @@ GameObject:
   - component: {fileID: 855009625}
   - component: {fileID: 855009624}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Cylinder(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5511,7 +5511,7 @@ GameObject:
   - component: {fileID: 942825701}
   - component: {fileID: 942825700}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Capsule(3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6101,7 +6101,7 @@ GameObject:
   - component: {fileID: 1088177880}
   - component: {fileID: 1088177879}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Capsule(2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6367,9 +6367,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 230025348}
-        m_TargetAssemblyTypeName: ExportToObject, Assembly-CSharp
-        m_MethodName: ExportAndAssignTextureSphere
+      - m_Target: {fileID: 230025351}
+        m_TargetAssemblyTypeName: ExportToObject2, Assembly-CSharp
+        m_MethodName: ExportAndAssignTextureSphere2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6501,9 +6501,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 117906}
-        m_TargetAssemblyTypeName: ExportToObject, Assembly-CSharp
-        m_MethodName: ExportAndAssignTextureSphere
+      - m_Target: {fileID: 117909}
+        m_TargetAssemblyTypeName: ExportToObject3, Assembly-CSharp
+        m_MethodName: ExportAndAssignTextureSphere3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7424,7 +7424,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228189362}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -11.535, y: 1.05, z: 0.716}
+  m_LocalPosition: {x: -11.24, y: 1.14, z: 0.716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7850,9 +7850,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 117906}
-        m_TargetAssemblyTypeName: ExportToObject, Assembly-CSharp
-        m_MethodName: ExportAndAssignTextureCapsule
+      - m_Target: {fileID: 117909}
+        m_TargetAssemblyTypeName: ExportToObject3, Assembly-CSharp
+        m_MethodName: ExportAndAssignTextureCapsule3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8466,9 +8466,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1417463082}
-        m_TargetAssemblyTypeName: ExportToObject, Assembly-CSharp
-        m_MethodName: ExportAndAssignTextureSphere
+      - m_Target: {fileID: 1483544252}
+        m_TargetAssemblyTypeName: ExportToObject1, Assembly-CSharp
+        m_MethodName: ExportAndAssignTextureSphere1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8526,7 +8526,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1483544251}
   - component: {fileID: 1483544250}
-  - component: {fileID: 1483544249}
+  - component: {fileID: 1483544252}
   m_Layer: 0
   m_Name: GenerateObject (1)
   m_TagString: Untagged
@@ -8534,23 +8534,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1483544249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1483544248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 401b8914b8e804ed5931c7f947ab169f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sourceObject: {fileID: 1533639132}
-  cubeObject: {fileID: 43938150}
-  cylinderObject: {fileID: 855009622}
-  sphereObject: {fileID: 1591390753}
-  capsuleObject: {fileID: 2145401880}
 --- !u!23 &1483544250
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8608,6 +8591,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1483544252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483544248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd9d6e6a0dcd49b1afd15c3f3a94581, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourceObject1: {fileID: 1533639132}
+  cubeObject1: {fileID: 43938150}
+  cylinderObject1: {fileID: 855009622}
+  sphereObject1: {fileID: 1591390753}
+  capsuleObject1: {fileID: 2145401880}
 --- !u!1 &1511510678
 GameObject:
   m_ObjectHideFlags: 0
@@ -8905,9 +8905,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1417463082}
-        m_TargetAssemblyTypeName: ExportToObject, Assembly-CSharp
-        m_MethodName: ExportAndAssignTextureCube
+      - m_Target: {fileID: 1483544252}
+        m_TargetAssemblyTypeName: ExportToObject1, Assembly-CSharp
+        m_MethodName: ExportAndAssignTextureCube1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9032,7 +9032,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529395192}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.06, y: 1, z: -10}
+  m_LocalPosition: {x: -6.25, y: 1, z: -6.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9053,7 +9053,7 @@ GameObject:
   - component: {fileID: 1532433750}
   - component: {fileID: 1532433749}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Sphere(3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9414,7 +9414,7 @@ GameObject:
   - component: {fileID: 1591390756}
   - component: {fileID: 1591390755}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Sphere(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9823,7 +9823,7 @@ GameObject:
   - component: {fileID: 1605170318}
   - component: {fileID: 1605170317}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Cylinder(3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10253,7 +10253,7 @@ GameObject:
   - component: {fileID: 1725176002}
   - component: {fileID: 1725176001}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Cylinder(2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11090,9 +11090,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 230025348}
-        m_TargetAssemblyTypeName: ExportToObject, Assembly-CSharp
-        m_MethodName: ExportAndAssignTextureCylinder
+      - m_Target: {fileID: 230025351}
+        m_TargetAssemblyTypeName: ExportToObject2, Assembly-CSharp
+        m_MethodName: ExportAndAssignTextureCylinder2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12097,9 +12097,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1417463082}
-        m_TargetAssemblyTypeName: ExportToObject, Assembly-CSharp
-        m_MethodName: ExportAndAssignTextureCapsule
+      - m_Target: {fileID: 1483544252}
+        m_TargetAssemblyTypeName: ExportToObject1, Assembly-CSharp
+        m_MethodName: ExportAndAssignTextureCapsule1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12160,7 +12160,7 @@ GameObject:
   - component: {fileID: 2145401882}
   - component: {fileID: 2145401881}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Capsule(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
