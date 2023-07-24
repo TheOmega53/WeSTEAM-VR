@@ -8,7 +8,7 @@ public class CollisionTrigger : MonoBehaviour
 {
     public UnityEvent TriggerEvent;
 
-    private void OnTriggerEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Player")
         {

@@ -7,13 +7,13 @@ public class CustomBook : MonoBehaviour
 {
     [SerializeField]
     private bool isOpen;
-    private BoxCollider collider;
+    private BoxCollider bookCollider;
     private Animator animator;
     private Canvas content;
     
     private void Start()
     {
-        collider = this.transform.GetComponent<BoxCollider>();
+        bookCollider = this.transform.GetComponent<BoxCollider>();
         animator = this.transform.GetComponent<Animator>();
         content = this.transform.GetComponentInChildren<Canvas>();
         UpdateCollider();
@@ -23,14 +23,14 @@ public class CustomBook : MonoBehaviour
     {
         if (!isOpen)
         {
-            UpdateCollider();
             isOpen = true;
+            UpdateCollider();
             animator.SetTrigger("Trigger");
             
         } else
         {
-            UpdateCollider();
             isOpen = false;
+            UpdateCollider();
             animator.SetTrigger("Trigger");
         }
     }
@@ -39,14 +39,14 @@ public class CustomBook : MonoBehaviour
     {
         if (this.isOpen)
         {
-            collider.center = new Vector3(0, 0.0125f, 0);
-            collider.size = new Vector3(0.3076485f, 0.02910475f, 0.2000001f);
+            bookCollider.center = new Vector3(0, 0.0125f, 0);
+            bookCollider.size = new Vector3(0.3076485f, 0.02910475f, 0.2000001f);
 
         }
         else
         {
-            collider.center = new Vector3(0, 0.08f, 0);
-            collider.size = new Vector3(0.04f, 0.16f, 0.2f);
+            bookCollider.center = new Vector3(0, 0.08f, 0);
+            bookCollider.size = new Vector3(0.04f, 0.16f, 0.2f);
         }
     }
 

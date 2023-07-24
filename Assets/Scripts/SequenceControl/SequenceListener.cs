@@ -13,7 +13,12 @@ public class SequenceListener : MonoBehaviour
     private void Start()
     {
         sequenceManager = SequenceManager.GetInstance();
-        SequenceManager.Sequences[SequenceName] += InvokeEvent;
+        SequenceManager.SequenceEvents[SequenceName] += InvokeEvent;
+
+        if (sequenceManager.GetSequenceFlag(SequenceName))
+        {
+            InvokeEvent();
+        }
     }
     private void InvokeEvent()
     {

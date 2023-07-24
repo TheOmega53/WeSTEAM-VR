@@ -1,3 +1,5 @@
-Hello! I will be your AI assistant in this mission!
+Hello! I will be your AI assistant in this mission! Hope we get along!
 
-It looks like some information was lost in transmission, you should try to look around for clues to try to find out where we are!
+Wow there are so many books in this place..we don't even know what to look for!
+
+For now maybe try to look for a workstation? maybe we can find some personal notes.

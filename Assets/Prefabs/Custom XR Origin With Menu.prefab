@@ -2133,7 +2133,7 @@ GameObject:
   - component: {fileID: 1307778744}
   m_Layer: 0
   m_Name: Custom XR Origin With Menu
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3559,7 +3559,7 @@ PrefabInstance:
     - target: {fileID: 3324055142031041854, guid: a02f8605d81990c44a5fd3d545e3f8f6,
         type: 3}
       propertyPath: m_fontSize
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7519181646335385113, guid: a02f8605d81990c44a5fd3d545e3f8f6,
         type: 3}

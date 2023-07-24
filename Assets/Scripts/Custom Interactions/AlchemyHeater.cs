@@ -15,7 +15,6 @@ public class AlchemyHeater : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collision Detected");
         HeatedItem = other.gameObject.GetComponent<AlchemyInteractable>();
         if (HeatedItem != null)
         {
