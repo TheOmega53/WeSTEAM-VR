@@ -436,7 +436,7 @@ GameObject:
   - component: {fileID: 5055686232994395245}
   - component: {fileID: 5055686232994395153}
   m_Layer: 0
-  m_Name: Alireza_book
+  m_Name: Alireza_book_closed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -499,7 +499,7 @@ Animator:
   m_GameObject: {fileID: 5397579573238241002}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a238edba5853a814d9f9ecb332ebda03, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7552a312fad86db41914fae58ece70e7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -669,6 +669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6bd84a83133c6439d9ef3ea77ffea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  opened: 0
 --- !u!1 &5653526458090252215
 GameObject:
   m_ObjectHideFlags: 0
