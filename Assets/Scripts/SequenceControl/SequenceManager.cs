@@ -9,42 +9,52 @@ public class SequenceManager : MonoBehaviour
 
     private static SequenceManager instance;
 
-    public static event Action startedRepairs;
+    public static event Action intro;
+    public static event Action startedRepairs; 
     public static event Action startedAct1;
     public static event Action foundBook;
     public static event Action pouredFlask;
     public static event Action heatedFlask;
     public static event Action finishAct1;
+    public static event Action finishedRepair;
 
     public static Dictionary<string, Action> SequenceEvents = new Dictionary<string, Action>()
     {
+        ["intro"] = intro,
         ["startedRepairs"] = startedRepairs,
         ["startedAct1"] = startedAct1,
         ["foundBook"] = foundBook,
         ["pouredFlask"] = pouredFlask,
         ["heatedFlask"] = heatedFlask,
         ["finishAct1"] = finishAct1,
+        ["finishedRepair"] = finishedRepair
     };
 
     public Dictionary<String, bool> SequenceFlags = new Dictionary<String, bool>()
     {
 
         //all should be defaulted to false
+        ["intro"] = false,
         ["startedRepairs"] = false,
         ["startedAct1"] = false,
         ["foundBook"] = false,
         ["pouredFlask"] = false,
         ["heatedFlask"] = false,
         ["finishAct1"] = false,
+        ["finishedRepair"] = false
     };
 
     private void Awake()
     {
-        if (instance != null)
+        if (instance != null && instance != this)
         {
-            Debug.LogWarning("Found more than one Dialogue Manager in the scene");
+            Debug.LogWarning("Found more than one Sequence Manager in the scene, destroying: "+ gameObject.name);
+            Destroy(this.gameObject);
+        } else
+        {
+            instance = this;
         }
-        instance = this;
+        
 
         DontDestroyOnLoad(this.gameObject);
     }
@@ -62,11 +72,11 @@ public class SequenceManager : MonoBehaviour
             Action action = SequenceEvents[sequenceName];
             if (action != null) {
                 action.Invoke();
-                SequenceFlags[sequenceName] = true;
             } else
             {
                 Debug.LogWarning("the action for sequence " + sequenceName + "was empty, nothing invoked");
             }
+            SequenceFlags[sequenceName] = true;
 
         }
         else

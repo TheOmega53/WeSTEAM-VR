@@ -17,7 +17,7 @@ That doesn't seem to be right, try guessing again
 -> main
 
 == Correct ===
-That seems to be right.. hold on. I'm receiving some transmissions on the neuralink. I'll send them to you.
+That seems to be right.. hold on. I'm receiving some transmissions on the neuralink. I'll work on sending them to you.
 
 -> DONE
 

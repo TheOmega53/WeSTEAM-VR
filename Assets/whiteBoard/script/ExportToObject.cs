@@ -17,16 +17,16 @@ public class ExportToObject : MonoBehaviour
     void Start()
     {
         Renderer cubeRenderer = cubeObject.GetComponent<Renderer>();
-        cubeRenderer.enabled = false;
+        cubeRenderer.gameObject.SetActive(false);
         
         Renderer cylinderRenderer = cylinderObject.GetComponent<Renderer>();
-        cylinderRenderer.enabled = false;
+        cylinderRenderer.gameObject.SetActive(false);
         
         Renderer sphereRenderer = sphereObject.GetComponent<Renderer>();
-        sphereRenderer.enabled = false;
+        sphereRenderer.gameObject.SetActive(false);
         
         Renderer capsuleRenderer = capsuleObject.GetComponent<Renderer>();
-        capsuleRenderer.enabled = false;
+        capsuleRenderer.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -41,7 +41,6 @@ public class ExportToObject : MonoBehaviour
         //Material sourceMaterial = sourceRenderer.material;
         //Texture sourceTexture = sourceMaterial.mainTexture;
         //Renderer cubeRenderer = cubeObject.GetComponent<Renderer>();
-        cubeObject.GetComponent<Renderer>().enabled = true;
         //Material cubeMaterial = cubeRenderer.material;
         //cubeMaterial.mainTexture = sourceTexture;
         
@@ -53,7 +52,6 @@ public class ExportToObject : MonoBehaviour
         //Material sourceMaterial = sourceRenderer.material;
         //Texture sourceTexture = sourceMaterial.mainTexture;
         //Renderer cylinderRenderer = cylinderObject.GetComponent<Renderer>();
-        cylinderObject.GetComponent<Renderer>().enabled = true;
         //Material cylinderMaterial = cylinderRenderer.material;
         //cylinderMaterial.mainTexture = sourceTexture;
 
@@ -65,7 +63,6 @@ public class ExportToObject : MonoBehaviour
         //Material sourceMaterial = sourceRenderer.material;
         //Texture sourceTexture = sourceMaterial.mainTexture;
         //Renderer sphereRenderer = sphereObject.GetComponent<Renderer>();
-        sphereObject.GetComponent<Renderer>().enabled = true;
         //Material sphereMaterial = sphereRenderer.material;
         //sphereMaterial.mainTexture = sourceTexture;
 
@@ -79,7 +76,6 @@ public class ExportToObject : MonoBehaviour
         //Texture sourceTexture = sourceMaterial.mainTexture;
         //Renderer capsuleRenderer = capsuleObject.GetComponent<Renderer>();
         //capsuleRenderer.enabled = true;
-        capsuleObject.GetComponent<Renderer>().enabled = true;
         //Material capsuleMaterial = capsuleRenderer.material;
         //capsuleMaterial.mainTexture = sourceTexture;
         capsuleObject.GetComponent<Renderer>().material.mainTexture = sourceObject.GetComponent<Renderer>().material.mainTexture;
