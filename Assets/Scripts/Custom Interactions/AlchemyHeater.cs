@@ -6,6 +6,8 @@ public class AlchemyHeater : MonoBehaviour
 {
     private AlchemyInteractionManager alchemyInteractionManager;
     private AlchemyInteractable HeatedItem;
+
+    public ParticleSystem heatParticles;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +37,9 @@ public class AlchemyHeater : MonoBehaviour
 
     private IEnumerator Heat()
     {
+        heatParticles.gameObject.SetActive(true);
         yield return new WaitForSeconds(3);
+        heatParticles.gameObject.SetActive(false);
         HeatedItem.Heat();
     }
 }

@@ -8,12 +8,19 @@ public class AlchemyInteractable : MonoBehaviour
 {
     private AlchemyInteractionManager alchemyInteractionManager;
     private bool held;
+    private bool isPouring;
 
     [Header("When poured inside it")]
     [SerializeField] private UnityEvent pouredInEvent;
 
     [Header("When heated")]
     [SerializeField] private UnityEvent heatedEvent;
+
+    [Header("When pouring")]
+    [SerializeField] private UnityEvent pouringEvent;
+
+    [Header("When stopped pouring")]
+    [SerializeField] private UnityEvent pouringStoppedEvent;
 
 
     private void Start()
@@ -25,11 +32,40 @@ public class AlchemyInteractable : MonoBehaviour
     {                
         if(transform.rotation.eulerAngles.x > 80 & transform.rotation.eulerAngles.x < 280)
         {
-            alchemyInteractionManager.Pour(this, this.transform);
+            if (!isPouring)
+            {
+                isPouring = true;
+                PourEvent(true);
+            }
+            
         } else if (transform.rotation.eulerAngles.z > 80 && transform.rotation.eulerAngles.z < 280)
         {
-            alchemyInteractionManager.Pour(this, this.transform);
+            if (!isPouring)
+            {
+                isPouring = true;
+                PourEvent(true);
+            }
+        } else
+        {
+            if (isPouring)
+            {
+                isPouring = false;
+                PourEvent(false);
+            }            
         }
+    }
+
+    private void PourEvent(bool ispouring)
+    {
+        if (ispouring)
+        {
+            alchemyInteractionManager.Pour(this, this.transform);
+            pouringEvent.Invoke();
+        } else
+        {
+            pouringStoppedEvent.Invoke();
+        }
+        
     }
 
     public void OnItemGrabbed()
