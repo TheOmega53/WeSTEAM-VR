@@ -2959,14 +2959,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7396520030760373918}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 553399bd136caa64ba6a44285760172e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 8062650724689331300}
-  dialogueText: {fileID: 5225544794038125970}
+  dialogueTextNoChoices: {fileID: 533600324144867744}
+  dialogueTextWithChoices: {fileID: 5225544794038125970}
   TalkerImage: {fileID: 1047250810794007790}
+  CanContinueSprite: {fileID: 8834555139261568161}
   choices:
   - {fileID: 6828625057296982694}
   - {fileID: 1978819294129170064}
@@ -3556,6 +3558,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1435213662887394789, guid: a02f8605d81990c44a5fd3d545e3f8f6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.669693
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790417737233800302, guid: a02f8605d81990c44a5fd3d545e3f8f6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4062688355532292618, guid: a02f8605d81990c44a5fd3d545e3f8f6,
         type: 3}
       propertyPath: m_IsActive
@@ -3668,6 +3680,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a02f8605d81990c44a5fd3d545e3f8f6, type: 3}
+--- !u!114 &533600324144867744 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7044207530987931916, guid: a02f8605d81990c44a5fd3d545e3f8f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7396520030837072044}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1047250810794007790 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7506694464132824130, guid: a02f8605d81990c44a5fd3d545e3f8f6,
@@ -3767,3 +3791,15 @@ MonoBehaviour:
   MenuCanvas: {fileID: 8062650724689331296}
   PlayerCamera: {fileID: 6901248074567331798}
   ContinueDialogueButton: {fileID: 6952545807062365604}
+--- !u!114 &8834555139261568161 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2035366245122143245, guid: a02f8605d81990c44a5fd3d545e3f8f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7396520030837072044}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

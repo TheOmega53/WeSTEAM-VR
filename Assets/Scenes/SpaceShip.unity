@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.02495846, g: 0.02274444, b: 0.07047759, a: 1}
+  m_IndirectSpecularColor: {r: 0.025082665, g: 0.023002574, b: 0.07034288, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -977,7 +977,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.50628924, g: 0.7957059, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.4
   m_Range: 7.740295
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1434,8 +1434,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 687451060}
-  dialogueText: {fileID: 581905763}
+  dialogueTextNoChoices: {fileID: 0}
+  dialogueTextWithChoices: {fileID: 0}
   TalkerImage: {fileID: 0}
+  CanContinueSprite: {fileID: 0}
   choices: []
   continueButton: {fileID: 0}
 --- !u!1001 &165882783
@@ -4315,7 +4317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10885916, guid: 3517d6179b17d7d41b2ab3881cb2cd67, type: 3}
       propertyPath: m_Intensity
-      value: 1
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 19875096, guid: 3517d6179b17d7d41b2ab3881cb2cd67, type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -11457,7 +11459,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.50628924, g: 0.7957059, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.4
   m_Range: 7.740295
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -11610,7 +11612,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.50628924, g: 0.7957059, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.4
   m_Range: 7.740295
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

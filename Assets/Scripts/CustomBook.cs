@@ -9,15 +9,12 @@ public class CustomBook : MonoBehaviour
     private bool isOpen;
     private BoxCollider bookCollider;
     private Animator animator;
-    private Canvas content;
     
     private void Start()
     {
         bookCollider = this.transform.GetComponent<BoxCollider>();
         animator = this.transform.GetComponent<Animator>();
-        content = this.transform.GetComponentInChildren<Canvas>();
         UpdateCollider();
-        ToggleContent();
     }
     public void OpenClose()
     {
@@ -47,18 +44,6 @@ public class CustomBook : MonoBehaviour
         {
             bookCollider.center = new Vector3(0, 0.08f, 0);
             bookCollider.size = new Vector3(0.04f, 0.16f, 0.2f);
-        }
-    }
-
-    public void ToggleContent()
-    {
-        Debug.Log("Toggling Content");
-        if (isOpen)
-        {
-            content.gameObject.SetActive(true);
-        } else
-        {
-            content.gameObject.SetActive(false);
         }
     }
 }

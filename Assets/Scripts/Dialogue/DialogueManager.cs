@@ -11,8 +11,14 @@ public class DialogueManager : MonoBehaviour
 {
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
-    [SerializeField] private TextMeshProUGUI dialogueText;
+
+    private TextMeshProUGUI dialogueText;
+    [Header("Default Dialogue UI")]   
+    [SerializeField] private TextMeshProUGUI dialogueTextNoChoices;
+    [Header("Dialogue UI With Choices")]    
+    [SerializeField] private TextMeshProUGUI dialogueTextWithChoices;
     [SerializeField] private Image TalkerImage;
+    [SerializeField] private Image CanContinueSprite;
     [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
@@ -20,6 +26,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject continueButton;
 
     private Story currentStory;
+    private List<Text> StoryLog = new List<Text>();
     private UnityEvent endOfStoryEvent;
     public bool dialogueIsPlaying { get; private set; }
 
@@ -44,6 +51,8 @@ public class DialogueManager : MonoBehaviour
     {        
         dialogueIsPlaying = false;
 
+        dialogueText = dialogueTextNoChoices;
+
         choicesText = new TextMeshProUGUI[choices.Length];
         int index = 0;
         foreach (GameObject choice in choices)
@@ -55,6 +64,8 @@ public class DialogueManager : MonoBehaviour
 
     public void EnterDialogueMode(TextAsset inkJSON, UnityEvent EndOfStoryEvent, Sprite TalkerSprite)
     {
+        StoryLog.Clear();
+
         currentStory = new Story(inkJSON.text);
         endOfStoryEvent = EndOfStoryEvent;
         if (TalkerSprite != null)
@@ -77,10 +88,13 @@ public class DialogueManager : MonoBehaviour
 
     public void ContinueStory()
     {
-        if (currentStory.canContinue && currentStory.currentChoices.Count == 0)
+        if (currentStory.canContinue)
         {
-            dialogueText.text = currentStory.Continue();
+            string text = currentStory.Continue();
+            dialogueText.text = text;
             DisplayChoices();
+
+            //TODO: CREATE A LOG OF THE STORY PROGRESSION
         }
         else
         {
@@ -96,23 +110,36 @@ public class DialogueManager : MonoBehaviour
         endOfStoryEvent.Invoke();
     }
 
+    private void ChangeDialogueBox(TextMeshProUGUI DialogueBox)
+    {
+        TextMeshProUGUI temp = null;
+        if (dialogueText) {
+            temp = dialogueText;            
+        }              
+        dialogueText = DialogueBox;
+        dialogueText.text = temp.text;
+
+        temp?.gameObject.SetActive(false);
+        dialogueText.gameObject.SetActive(true);
+
+        temp = null;
+    }
+
     private void DisplayChoices()
     {
         List<Choice> currentChoices = currentStory.currentChoices;
 
         if (currentStory.currentChoices.Count > 0)
-        {
-            if (continueButton)
-            {
-                continueButton.gameObject.SetActive(false);
-            }            
+        {            
+            continueButton?.gameObject.SetActive(false);
+            CanContinueSprite?.gameObject.SetActive(false);
+            ChangeDialogueBox(dialogueTextWithChoices);
         }
         else
         {
-            if (continueButton)
-            {
-                continueButton.gameObject.SetActive(true);
-            }            
+            continueButton?.gameObject.SetActive(true);
+            CanContinueSprite?.gameObject.SetActive(true);
+            ChangeDialogueBox(dialogueTextNoChoices);
         }
 
         if(currentChoices.Count > choices.Length)
