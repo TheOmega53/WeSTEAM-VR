@@ -7238,7 +7238,7 @@ PrefabInstance:
     - target: {fileID: 3799382123011569550, guid: 6e0bd61f0bd43e844ad7c3ee8948779d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.9999995
+      value: -3.8461533
       objectReference: {fileID: 0}
     - target: {fileID: 3799382123011569550, guid: 6e0bd61f0bd43e844ad7c3ee8948779d,
         type: 3}
@@ -11223,6 +11223,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 973821582}
     m_Modifications:
+    - target: {fileID: 3446317720184065818, guid: 21a9065e032f575429f1b7c22fa2e95d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7929957827792621442, guid: 21a9065e032f575429f1b7c22fa2e95d,
         type: 3}
       propertyPath: m_RootOrder
@@ -11282,6 +11287,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Door_pack_jammed (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014333971935307722, guid: 21a9065e032f575429f1b7c22fa2e95d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.226
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014333971935307722, guid: 21a9065e032f575429f1b7c22fa2e95d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.655
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014333971935307722, guid: 21a9065e032f575429f1b7c22fa2e95d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014333971935307722, guid: 21a9065e032f575429f1b7c22fa2e95d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014333971935307722, guid: 21a9065e032f575429f1b7c22fa2e95d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014333971935307722, guid: 21a9065e032f575429f1b7c22fa2e95d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014333971935307722, guid: 21a9065e032f575429f1b7c22fa2e95d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21a9065e032f575429f1b7c22fa2e95d, type: 3}
@@ -14627,7 +14667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1529036841
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17692,6 +17732,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638790066844638313, guid: 21e656e5bfb1d4947b194334583c78c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4169872724820800100, guid: 21e656e5bfb1d4947b194334583c78c2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879058614256963758, guid: 21e656e5bfb1d4947b194334583c78c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.347
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879058614256963758, guid: 21e656e5bfb1d4947b194334583c78c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.194
+      objectReference: {fileID: 0}
+    - target: {fileID: 6630151190589871624, guid: 21e656e5bfb1d4947b194334583c78c2,
+        type: 3}
+      propertyPath: m_text
+      value: Warp Reactor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834452813243613608, guid: 21e656e5bfb1d4947b194334583c78c2,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 3.435
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21e656e5bfb1d4947b194334583c78c2, type: 3}
@@ -21279,11 +21349,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door_pack
       objectReference: {fileID: 0}
-    - target: {fileID: 1706487921805246565, guid: 21e656e5bfb1d4947b194334583c78c2,
-        type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 5389901470640259313}
     - target: {fileID: 1735476317555761198, guid: 21e656e5bfb1d4947b194334583c78c2,
         type: 3}
       propertyPath: m_RootOrder
