@@ -203,15 +203,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenButtons:
-  - {fileID: 0}
+  - {fileID: 5567473117004720003}
   - {fileID: 7386607798322217825}
   - {fileID: 6461980891508822578}
-  - {fileID: 0}
+  - {fileID: 8050478487959475362}
   CloseButtons:
-  - {fileID: 0}
+  - {fileID: 4046787614074251304}
   - {fileID: 6931046268786226058}
   - {fileID: 5175004097796281548}
-  - {fileID: 0}
+  - {fileID: 6197298346563080791}
   isOpen: 0
   animator: {fileID: 6470194441472382715}
 --- !u!1 &903958967077228711
@@ -2659,7 +2659,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &691482273563422958
 RectTransform:
   m_ObjectHideFlags: 0

@@ -23,9 +23,9 @@ public class MenuController : MonoBehaviour
         }
     }
 
-    public void LoadScene(string levelName)
+    public void ReloadScene()
     {
-        SceneManager.LoadScene(levelName);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void OnExit()
