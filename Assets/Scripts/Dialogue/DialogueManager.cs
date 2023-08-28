@@ -37,7 +37,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogWarning("Found more than one Dialogue Manager in the scene");
+            Debug.LogWarning("Found more than one Dialogue Manager in the scene, I am:" + name + "but existing instance is: " + instance.name);
         }
         instance = this;
     }
@@ -130,15 +130,15 @@ public class DialogueManager : MonoBehaviour
         List<Choice> currentChoices = currentStory.currentChoices;
 
         if (currentStory.currentChoices.Count > 0)
-        {            
-            continueButton?.gameObject.SetActive(false);
-            CanContinueSprite?.gameObject.SetActive(false);
+        {
+            if (continueButton != null) continueButton?.gameObject.SetActive(false);
+            if (CanContinueSprite != null) CanContinueSprite?.gameObject.SetActive(false);
             ChangeDialogueBox(dialogueTextWithChoices);
         }
         else
         {
-            continueButton?.gameObject.SetActive(true);
-            CanContinueSprite?.gameObject.SetActive(true);
+            if(continueButton != null) continueButton?.gameObject.SetActive(true);
+            if(CanContinueSprite != null) CanContinueSprite?.gameObject.SetActive(true);
             ChangeDialogueBox(dialogueTextNoChoices);
         }
 

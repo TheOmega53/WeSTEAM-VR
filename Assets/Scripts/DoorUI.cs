@@ -11,11 +11,20 @@ public class DoorUI : MonoBehaviour
 
     [SerializeField] private Animator animator;
 
+    private AudioSource audioSource;
+
+
+    private void Start()
+    {
+        audioSource = this.gameObject.GetComponent<AudioSource>();
+    }
+
     public void OpenClose()
     {
         isOpen = !isOpen;
 
         animator.SetBool("isOpen", isOpen);
+        audioSource?.Play();
 
         foreach (var button in OpenButtons)
         {
