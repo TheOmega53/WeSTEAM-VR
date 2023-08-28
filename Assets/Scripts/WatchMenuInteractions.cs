@@ -31,6 +31,7 @@ public class WatchMenuInteractions : MonoBehaviour
 
         Watch.transform.localPosition = Vector3.zero;
         Watch.transform.localEulerAngles = Vector3.zero;
+        Watch.transform.localScale = new Vector3(1, 1, 1);
 
         transform.parent.LookAt(PlayerCamera);
     }
