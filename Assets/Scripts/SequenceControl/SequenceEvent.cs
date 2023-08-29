@@ -22,6 +22,7 @@ public class SequenceEvent : MonoBehaviour
         {
             if (!sequenceManager.GetSequenceFlag(condition))
             {
+                Debug.Log("event not allowed");
                 allowed = false;
             }
         }
@@ -30,12 +31,14 @@ public class SequenceEvent : MonoBehaviour
         {
             if (sequenceManager.GetSequenceFlag(condition))
             {
+                Debug.Log("event disallowed");
                 allowed = false;
             }
         }
 
         if (allowed)
         {
+            Debug.Log("event allowed, invoking");
             Event.Invoke();
         }
     }

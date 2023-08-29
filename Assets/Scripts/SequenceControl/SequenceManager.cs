@@ -12,7 +12,12 @@ public class SequenceManager : MonoBehaviour
     public static event Action intro;
     public static event Action startedRepairs; 
     public static event Action startedAct1;
-    public static event Action foundBook;
+    public static event Action foundBook1;
+    public static event Action foundBook2;
+    public static event Action foundBook3;
+    public static event Action Solved1;
+    public static event Action Solved2;
+    public static event Action Solved3;
     public static event Action pouredFlask;
     public static event Action heatedFlask;
     public static event Action finishAct1;
@@ -23,7 +28,12 @@ public class SequenceManager : MonoBehaviour
         ["intro"] = intro,
         ["startedRepairs"] = startedRepairs,
         ["startedAct1"] = startedAct1,
-        ["foundBook"] = foundBook,
+        ["foundBook1"] = foundBook1,
+        ["foundBook2"] = foundBook2,
+        ["foundBook3"] = foundBook3,
+        ["Solved1"] = Solved1,
+        ["Solved2"] = Solved2,
+        ["Solved3"] = Solved3,
         ["pouredFlask"] = pouredFlask,
         ["heatedFlask"] = heatedFlask,
         ["finishAct1"] = finishAct1,
@@ -37,7 +47,12 @@ public class SequenceManager : MonoBehaviour
         ["intro"] = false,
         ["startedRepairs"] = false,
         ["startedAct1"] = false,
-        ["foundBook"] = false,
+        ["foundBook1"] = false,
+        ["foundBook2"] = false,
+        ["foundBook3"] = false,
+        ["Solved1"] = false,
+        ["Solved2"] = false,
+        ["Solved3"] = false,
         ["pouredFlask"] = false,
         ["heatedFlask"] = false,
         ["finishAct1"] = false,
