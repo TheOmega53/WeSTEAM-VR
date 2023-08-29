@@ -39,7 +39,7 @@ public class AlchemyHeater : MonoBehaviour
     {
         heatParticles.gameObject.SetActive(true);
         yield return new WaitForSeconds(3);
-        heatParticles.gameObject.SetActive(false);
+        //heatParticles.gameObject.SetActive(false);
         HeatedItem.Heat();
     }
 }
