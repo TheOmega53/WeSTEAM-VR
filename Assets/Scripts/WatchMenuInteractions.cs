@@ -18,10 +18,22 @@ public class WatchMenuInteractions : MonoBehaviour
     private void Start()
     {
         dialogueManager = DialogueManager.GetInstance();
-        ContinueDialogueButton.onClick.AddListener (() => dialogueManager.ContinueStory());
-        MenuCanvas.gameObject.SetActive(false);
+        ContinueDialogueButton.onClick.AddListener (() => dialogueManager.MakeChoice(0));
+        MenuCanvas.gameObject.SetActive(false);        
     }
 
+
+    public void LookAtPlayer()
+    {
+        StartCoroutine(timeWaster());
+    }
+
+    public IEnumerator timeWaster()
+    {
+        yield return new WaitForSeconds(1);
+        Debug.Log("looking at player");
+        transform.parent.LookAt(PlayerCamera);
+    }
 
     //Used for reseting position of the watch when switching hands
     public void SwapWatch(Transform WatchLocation)

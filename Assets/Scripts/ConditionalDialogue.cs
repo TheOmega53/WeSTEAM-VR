@@ -7,4 +7,7 @@ public class ConditionalDialogue : MonoBehaviour
     public DialogueTrigger ConditionTrueDialogue;
 
     public DialogueTrigger ConditionFalseDialogue;
+
+
+
 }

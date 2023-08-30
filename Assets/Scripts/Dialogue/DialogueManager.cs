@@ -18,12 +18,13 @@ public class DialogueManager : MonoBehaviour
     [Header("Dialogue UI With Choices")]    
     [SerializeField] private TextMeshProUGUI dialogueTextWithChoices;
     [SerializeField] private Image TalkerImage;
-    [SerializeField] private Image CanContinueSprite;
     [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
 
+    [SerializeField] private Image CanContinueSprite;
     [SerializeField] private GameObject continueButton;
+    [SerializeField] private TextMeshProUGUI ContinueButtonText;
 
     private Story currentStory;
     private List<Text> StoryLog = new List<Text>();
@@ -129,7 +130,7 @@ public class DialogueManager : MonoBehaviour
     {
         List<Choice> currentChoices = currentStory.currentChoices;
 
-        if (currentStory.currentChoices.Count > 0)
+        if (currentStory.currentChoices.Count > 1)
         {
             if (continueButton != null) continueButton?.gameObject.SetActive(false);
             if (CanContinueSprite != null) CanContinueSprite?.gameObject.SetActive(false);
@@ -138,7 +139,7 @@ public class DialogueManager : MonoBehaviour
         else
         {
             if(continueButton != null) continueButton?.gameObject.SetActive(true);
-            if(CanContinueSprite != null) CanContinueSprite?.gameObject.SetActive(true);
+            if(CanContinueSprite != null) CanContinueSprite?.gameObject.SetActive(true);            
             ChangeDialogueBox(dialogueTextNoChoices);
         }
 
@@ -147,24 +148,37 @@ public class DialogueManager : MonoBehaviour
             Debug.LogError("More choices were given than the UI can support.");
         }
 
-        int index = 0;
 
-        foreach(Choice choice in currentChoices)
+        if(currentChoices.Count > 1)
         {
-            choices[index].gameObject.SetActive(true);
-            choicesText[index].text = choice.text;
-            index++;
-        }
+            int index = 0;
 
-        for (int i = index; i<choices.Length; i++)
+            foreach (Choice choice in currentChoices)
+            {
+                choices[index].gameObject.SetActive(true);
+                choicesText[index].text = choice.text;
+                index++;
+            }
+
+            for (int i = index; i < choices.Length; i++)
+            {
+                choices[i].gameObject.SetActive(false);
+            }
+        } else
         {
-            choices[i].gameObject.SetActive(false);
+            foreach (Choice choice in currentChoices)
+            {
+                ContinueButtonText.text = choice.text;
+            }
         }
     }
 
     public void MakeChoice(int choiceIndex)
     {
-        currentStory.ChooseChoiceIndex(choiceIndex);
+        if(currentStory.currentChoices.Count > 0)
+        {
+            currentStory.ChooseChoiceIndex(choiceIndex);
+        }        
         ContinueStory();
 
     }

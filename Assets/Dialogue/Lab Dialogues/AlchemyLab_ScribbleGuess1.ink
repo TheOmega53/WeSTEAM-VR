@@ -16,9 +16,11 @@ Which word should be here?
 
 === Wrong ===
 That doesn't seem to be right, try guessing again
++[...]
 -> main
 
 == Correct ===
-That's right!
+Well done, Captain. Your curiosity and insights have led us closer to uncovering the secrets we seek!
 
++[I'll do my best!]
 -> DONE

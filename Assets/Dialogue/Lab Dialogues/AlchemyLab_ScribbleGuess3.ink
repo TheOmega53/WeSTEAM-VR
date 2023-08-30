@@ -18,6 +18,6 @@ That doesn't seem to be right, try guessing again
 -> main
 
 == Correct ===
-That's right!
+That's correct! We're now one step closer to finding the missing link!
 
 -> DONE

@@ -5282,13 +5282,14 @@ MonoBehaviour:
   dialogueTextNoChoices: {fileID: 533600324144867744}
   dialogueTextWithChoices: {fileID: 5225544794038125970}
   TalkerImage: {fileID: 1047250810794007790}
-  CanContinueSprite: {fileID: 8834555139261568161}
   choices:
   - {fileID: 6828625057296982694}
   - {fileID: 1978819294129170064}
   - {fileID: 3559581517432342321}
   - {fileID: 3948438891393192209}
+  CanContinueSprite: {fileID: 8834555139261568161}
   continueButton: {fileID: 5926722948813814978}
+  ContinueButtonText: {fileID: 7577503181385035807}
 --- !u!1001 &7023983152980372413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5515,7 +5516,7 @@ PrefabInstance:
     - target: {fileID: 781537174658714905, guid: a02f8605d81990c44a5fd3d545e3f8f6,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 931993421839979061, guid: a02f8605d81990c44a5fd3d545e3f8f6,
         type: 3}
@@ -5592,10 +5593,15 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0.66967773
       objectReference: {fileID: 0}
+    - target: {fileID: 1952006456067540062, guid: a02f8605d81990c44a5fd3d545e3f8f6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3790417737233800302, guid: a02f8605d81990c44a5fd3d545e3f8f6,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3925110707049627274, guid: a02f8605d81990c44a5fd3d545e3f8f6,
         type: 3}
@@ -5962,6 +5968,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6934605481390482158, guid: a02f8605d81990c44a5fd3d545e3f8f6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1863425895}
+    - target: {fileID: 6934605481390482158, guid: a02f8605d81990c44a5fd3d545e3f8f6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ContinueStory
+      objectReference: {fileID: 0}
+    - target: {fileID: 6934605481390482158, guid: a02f8605d81990c44a5fd3d545e3f8f6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6934605481390482158, guid: a02f8605d81990c44a5fd3d545e3f8f6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7034040102405504318, guid: a02f8605d81990c44a5fd3d545e3f8f6,
         type: 3}
       propertyPath: m_Name
@@ -6030,12 +6056,12 @@ PrefabInstance:
     - target: {fileID: 7518396301626277511, guid: a02f8605d81990c44a5fd3d545e3f8f6,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7518396301626277511, guid: a02f8605d81990c44a5fd3d545e3f8f6,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7519181646335385113, guid: a02f8605d81990c44a5fd3d545e3f8f6,
         type: 3}
@@ -6045,17 +6071,17 @@ PrefabInstance:
     - target: {fileID: 7555743565825058398, guid: a02f8605d81990c44a5fd3d545e3f8f6,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7555743565825058398, guid: a02f8605d81990c44a5fd3d545e3f8f6,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7555743565825058398, guid: a02f8605d81990c44a5fd3d545e3f8f6,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7583303910132211721, guid: a02f8605d81990c44a5fd3d545e3f8f6,
         type: 3}
@@ -6197,7 +6223,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 493654697103561992, guid: a02f8605d81990c44a5fd3d545e3f8f6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a02f8605d81990c44a5fd3d545e3f8f6, type: 3}
 --- !u!114 &533600324144867744 stripped
 MonoBehaviour:
@@ -6241,6 +6268,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7396520030837072044}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3253835373291832806 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5440988058846750026, guid: a02f8605d81990c44a5fd3d545e3f8f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7396520030837072044}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3559581517432342321 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6324069002071189405, guid: a02f8605d81990c44a5fd3d545e3f8f6,
@@ -6277,16 +6316,16 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7396520030837072044}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6952545807062365604 stripped
+--- !u!114 &7577503181385035807 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 493654697103561992, guid: a02f8605d81990c44a5fd3d545e3f8f6,
+  m_CorrespondingSourceObject: {fileID: 1120557622890729651, guid: a02f8605d81990c44a5fd3d545e3f8f6,
     type: 3}
   m_PrefabInstance: {fileID: 7396520030837072044}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5926722948813814978}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!223 &8062650724689331296 stripped
@@ -6321,7 +6360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MenuCanvas: {fileID: 8062650724689331296}
   PlayerCamera: {fileID: 6901248074567331798}
-  ContinueDialogueButton: {fileID: 6952545807062365604}
+  ContinueDialogueButton: {fileID: 3253835373291832806}
   BackgroundMusic: {fileID: 5570971246129285987}
   Watch: {fileID: 7023855064119971589}
 --- !u!114 &8834555139261568161 stripped
