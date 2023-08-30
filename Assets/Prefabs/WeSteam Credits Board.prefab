@@ -547,8 +547,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.014, y: 0.97}
-  m_SizeDelta: {x: 126.8307, y: 30.2226}
+  m_AnchoredPosition: {x: 0.014, y: 0.905}
+  m_SizeDelta: {x: 126.8307, y: 43.2133}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3799382123547251395
 CanvasRenderer:
@@ -578,8 +578,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A game by: \nAlireza Ghasempour\nKamyab Ghasemi\n\nLule\xE5 University
-    of Technology"
+  m_text: "A game by: \nAlireza Ghasempour\nKamyab Ghasemi\nPixie R\xF6jarsv\xE4rd\nAnd
+    all the amazing participants of the WeSTEAM workshop!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7acc1f46389bff54fae0fa072f11f869, type: 2}
   m_sharedMaterial: {fileID: -8852004889792148448, guid: 7acc1f46389bff54fae0fa072f11f869,
@@ -675,7 +675,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3799382123549221587}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -684,8 +684,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.0140001625, y: 0.615}
-  m_SizeDelta: {x: 126.8307, y: 30.2226}
+  m_AnchoredPosition: {x: 0.02, y: 0.5278}
+  m_SizeDelta: {x: 126.8307, y: 25.4534}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3799382123549221584
 CanvasRenderer:
@@ -715,7 +715,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Music by Denys Kyshchuk (AudioCoffee) from Pixabay
+  m_text: Background Music by Denys Kyshchuk (AudioCoffee) from Pixabay
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7acc1f46389bff54fae0fa072f11f869, type: 2}
   m_sharedMaterial: {fileID: -8852004889792148448, guid: 7acc1f46389bff54fae0fa072f11f869,
@@ -858,7 +858,7 @@ MonoBehaviour:
     Grip button to point finger
     and interact with UI
 
-    Select To interact with books'
+    Select Button To interact with books'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7acc1f46389bff54fae0fa072f11f869, type: 2}
   m_sharedMaterial: {fileID: -8852004889792148448, guid: 7acc1f46389bff54fae0fa072f11f869,

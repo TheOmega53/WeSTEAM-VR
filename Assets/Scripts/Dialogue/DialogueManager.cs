@@ -166,10 +166,17 @@ public class DialogueManager : MonoBehaviour
             }
         } else
         {
-            foreach (Choice choice in currentChoices)
+            if(currentChoices.Count != 0)
             {
-                ContinueButtonText.text = choice.text;
+                foreach (Choice choice in currentChoices)
+                {
+                    ContinueButtonText.text = choice.text;
+                }
+            } else
+            {
+                ContinueButtonText.text = "Continue";
             }
+
         }
     }
 

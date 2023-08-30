@@ -14,6 +14,13 @@ public class GameManager : MonoBehaviour
     public Transform IntroSpawnPoint;
     public Transform ReturnSpawnPoint;
 
+    [Header("Conditional Dialogue Triggers")]
+    public GameObject IntroTrigger;
+    public GameObject RepairTrigger;
+
+    [Header("Conditional Interactables")]
+    public GameObject RepairInteractables;
+
     [Header("Different Repair Dialogues")]
     public GameObject IntroRepairButton;
     public GameObject ReturnRepairButton;
@@ -54,11 +61,19 @@ public class GameManager : MonoBehaviour
         {
             Player.transform.position = ReturnSpawnPoint.position;
             Player.transform.rotation = ReturnSpawnPoint.rotation;
+
+            RepairTrigger.SetActive(true);
+            IntroTrigger.SetActive(false);
+            RepairInteractables.SetActive(true);
         }
         else
-        {               
+        {                           
             Player.transform.position = IntroSpawnPoint.position;
             Player.transform.rotation = IntroSpawnPoint.rotation;
+
+            RepairTrigger.SetActive(false);
+            IntroTrigger.SetActive(true);
+            RepairInteractables.SetActive(false);
 
         }        
     }

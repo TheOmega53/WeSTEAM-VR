@@ -22,5 +22,4 @@ That doesn't seem to be right, try guessing again
 == Correct ===
 Well done, Captain. Your curiosity and insights have led us closer to uncovering the secrets we seek!
 
-+[I'll do my best!]
 -> DONE

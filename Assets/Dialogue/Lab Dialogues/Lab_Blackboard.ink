@@ -8,5 +8,4 @@ Oh no! it appears the anomalies are affecting the words written on the blackboar
 
 === two ===
 Perfect! whenever you think you are ready to fix the anomalies, go up to the blackboard and try to interact with them!
-+[Alright]
 -> DONE
