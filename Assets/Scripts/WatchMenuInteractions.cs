@@ -22,18 +22,15 @@ public class WatchMenuInteractions : MonoBehaviour
         MenuCanvas.gameObject.SetActive(false);        
     }
 
-
+    private void Update()
+    {
+        LookAtPlayer();
+    }
     public void LookAtPlayer()
     {
-        StartCoroutine(timeWaster());
-    }
-
-    public IEnumerator timeWaster()
-    {
-        yield return new WaitForSeconds(1);
-        Debug.Log("looking at player");
         transform.parent.LookAt(PlayerCamera);
     }
+
 
     //Used for reseting position of the watch when switching hands
     public void SwapWatch(Transform WatchLocation)

@@ -1264,9 +1264,9 @@ MonoBehaviour:
   Player: {fileID: 794364539}
   IntroSpawnPoint: {fileID: 1635627317}
   ReturnSpawnPoint: {fileID: 279810834}
-  IntroTrigger: {fileID: 0}
-  RepairTrigger: {fileID: 0}
-  RepairInteractables: {fileID: 0}
+  IntroTrigger: {fileID: 1463716246}
+  RepairTrigger: {fileID: 1445156590}
+  RepairInteractables: {fileID: 1179720473}
   IntroRepairButton: {fileID: 1070556857}
   ReturnRepairButton: {fileID: 230077254}
 --- !u!1 &134364919 stripped
@@ -12157,7 +12157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1179720474
 Transform:
   m_ObjectHideFlags: 0
@@ -15987,7 +15987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1445156591
 Transform:
   m_ObjectHideFlags: 0
@@ -19614,6 +19614,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: Warp Reactor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629148241631877197, guid: 21e656e5bfb1d4947b194334583c78c2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8834452813243613608, guid: 21e656e5bfb1d4947b194334583c78c2,
         type: 3}
