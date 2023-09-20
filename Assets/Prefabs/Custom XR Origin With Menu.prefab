@@ -6362,6 +6362,7 @@ MonoBehaviour:
   PlayerCamera: {fileID: 6901248074567331798}
   ContinueDialogueButton: {fileID: 3253835373291832806}
   BackgroundMusic: {fileID: 5570971246129285987}
+  ButtonBlip: {fileID: 446672905121990647}
   Watch: {fileID: 7023855064119971589}
 --- !u!114 &8834555139261568161 stripped
 MonoBehaviour:

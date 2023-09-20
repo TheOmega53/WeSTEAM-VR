@@ -26,4 +26,8 @@ public class SequenceListener : MonoBehaviour
         SequenceTriggeredEvent.Invoke();
     }
 
+    private void OnDestroy()
+    {
+        SequenceManager.SequenceEvents[SequenceName] -= InvokeEvent;
+    }
 }

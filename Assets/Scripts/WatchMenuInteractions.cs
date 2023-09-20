@@ -12,6 +12,7 @@ public class WatchMenuInteractions : MonoBehaviour
     [SerializeField] private Button ContinueDialogueButton;
 
     [SerializeField] private AudioSource BackgroundMusic;
+    [SerializeField] private AudioSource ButtonBlip;
 
     [SerializeField] private GameObject Watch;
     private DialogueManager dialogueManager;    
@@ -49,6 +50,7 @@ public class WatchMenuInteractions : MonoBehaviour
     {
         transform.parent.LookAt(PlayerCamera);
         Debug.Log("On Enable was called");
+        ButtonBlip.Play();
     }
     public void ToggleMenu()
     {
