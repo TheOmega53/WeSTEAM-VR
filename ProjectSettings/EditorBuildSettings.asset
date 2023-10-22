@@ -4,7 +4,22 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/MainScene.unity
+    guid: 2c08b051875de71438ae0aedd8db0b9e
+  - enabled: 0
+    path: Assets/Scenes/LibraryRoom.unity
+    guid: 621b2f68ede144f9c8728f44f9268684
+  - enabled: 0
+    path: Assets/Scenes/HomeRoom.unity
+    guid: 84494372a85584cbda6fd9af150e53d7
+  - enabled: 1
+    path: Assets/Scenes/SpaceShip.unity
+    guid: 3d886214ea7bc3c4c9924a0354f7fa90
+  - enabled: 1
+    path: Assets/Scenes/Labratory.unity
+    guid: 238b63afa310e428a87aea30ed9fead8
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}

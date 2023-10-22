@@ -1,0 +1,1 @@
+We are almost done with the engine repair! all we have to do now is to provide a photographic reference to the data we just restored, and the computer would be able to restore the necessary component! Step up to the board to provide the graphic information instructed.
