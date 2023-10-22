@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//Class for handling interactions of the custom book interactable.
+//Handles animations and changes the collider based on whether the book is open or closed.
+
 [RequireComponent(typeof(BoxCollider))]
 public class CustomBook : MonoBehaviour
 {

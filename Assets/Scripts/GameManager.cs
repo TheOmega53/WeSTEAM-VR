@@ -4,6 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+//Responsible for game state variables
+//works in tandem with Sequence Manager.
+//Handles player spawn locations and conditional loading scenarios.
+//Game Manager is destroyed on load, but sequence manager is not. hence why sequence checks are done on sequence manager.
 public class GameManager : MonoBehaviour
 {
 
@@ -32,6 +37,7 @@ public class GameManager : MonoBehaviour
         SetupScene();
     }
 
+    //Initialize the scene based on what state of the game player is at.
     private void SetupScene()
     {
         if (SceneManager.GetActiveScene().name == "SpaceShip")
@@ -78,11 +84,13 @@ public class GameManager : MonoBehaviour
         }        
     }
 
+    //Called by unityevents to trigger a specific sequence check (e.g. finished act1, foundbook1)
     public void TriggerSequence(string sequenceName)
     {
         sequenceManager.ActivateSequenceTrigger(sequenceName);
     }
 
+    //Used to check if a sequence flag is true or not.
     public bool SequenceCheck(string sequenceName)
     {
         return sequenceManager.GetSequenceFlag(sequenceName);

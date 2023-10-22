@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
+//Handles the interactions included in the main menu. (Settings, reload, exit)
 public class MenuController : MonoBehaviour
 {
     [SerializeField]

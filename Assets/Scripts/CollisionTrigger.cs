@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+
+
+//Simple class for creating collider trigger events.
+//Invokes a unityevent on collision with player.
 [RequireComponent(typeof(Collider))]
 public class CollisionTrigger : MonoBehaviour
 {

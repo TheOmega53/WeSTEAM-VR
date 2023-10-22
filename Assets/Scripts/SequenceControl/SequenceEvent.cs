@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+
+
+//This class is used for events that are dependant on a sequence flag.
+//There are two sets of allowing and disallowing flags, that can affect whether this unity event can fire.
+//Works in tandem with sequence manager.
 public class SequenceEvent : MonoBehaviour
 {
     public string[] DisallowingSequenceConditions;

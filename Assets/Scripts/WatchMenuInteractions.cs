@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+//Class responsible for handling all of the watch menu interactions.
+//These include adjusting the menu to player position, swapping left and right hand menus,
+//toggling the menu by tapping on the watch, and adjusting volume settings
 public class WatchMenuInteractions : MonoBehaviour
 {
 
@@ -27,6 +31,8 @@ public class WatchMenuInteractions : MonoBehaviour
     {
         LookAtPlayer();
     }
+
+    //used for adjusting the orientation of the menu so that it's always facing player.
     public void LookAtPlayer()
     {
         transform.parent.LookAt(PlayerCamera);
@@ -52,6 +58,9 @@ public class WatchMenuInteractions : MonoBehaviour
         Debug.Log("On Enable was called");
         ButtonBlip.Play();
     }
+
+
+    //called by poke event on the watch, to enable or disable the menu.
     public void ToggleMenu()
     {
         isMenuActive = MenuCanvas.isActiveAndEnabled;
@@ -66,6 +75,8 @@ public class WatchMenuInteractions : MonoBehaviour
         }
     }
     
+
+    //used for adjusting the volume slider.
     public void SetVolume(Slider slider)
     {
         BackgroundMusic.volume = slider.value;

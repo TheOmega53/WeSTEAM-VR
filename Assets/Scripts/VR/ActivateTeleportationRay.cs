@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
+//For enabling teleportation indicator
 public class ActivateTeleportationRay : MonoBehaviour
 {
     public GameObject leftTeleportation;

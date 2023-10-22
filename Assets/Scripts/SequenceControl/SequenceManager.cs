@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+//Singleton Class for handling game sequences.
+//Contains a list of gameplay flags and the respective actions related to them.
+//It's messy I know, but it works
+
 public class SequenceManager : MonoBehaviour
 {
 
@@ -58,7 +62,9 @@ public class SequenceManager : MonoBehaviour
         ["finishAct1"] = false,
         ["finishedRepair"] = false
     };
+    
 
+    //Singleton Implementation
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -73,12 +79,15 @@ public class SequenceManager : MonoBehaviour
 
         DontDestroyOnLoad(this.gameObject);
     }
-
     public static SequenceManager GetInstance()
     {
         return instance;
     }
 
+
+    //called whenever a sequence flag is triggered,
+    //changes the flag to true, and invokes the respective action.
+    //objects can subscribe to this action list by using the SequenceListener class.
     public void ActivateSequenceTrigger(string sequenceName)
     {
         if (SequenceEvents.ContainsKey(sequenceName))
@@ -100,6 +109,8 @@ public class SequenceManager : MonoBehaviour
         }
     }
 
+
+    //for getting the state of a specific flag.
     public bool GetSequenceFlag(string sequenceName)
     {
         if (SequenceFlags.ContainsKey(sequenceName))

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+
+//Responsible for initiating Dialogues.
+//Contains initialization information and reference to the respective inkJSON file.
 public class DialogueTrigger : MonoBehaviour
 {
     [Header("Ink JSON")]
@@ -14,18 +17,8 @@ public class DialogueTrigger : MonoBehaviour
     [Header("Talker Icon")]
     [SerializeField] private Sprite TalkerIcon;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-         
-    }
-
+    //Usually called by other unity events. e.g. end of dialogue events.
     public void TriggerDialogue()
     {        
         DialogueManager.GetInstance().EnterDialogueMode(inkJSON,endOfStoryEvent,TalkerIcon);
